@@ -63,7 +63,7 @@ class Vector2
   //find the angle of the vector
   float angle(Vector2 other)
   {
-    return atan(other.y / other.x);
+    return abs(atan(other.y / other.x) - atan(this.y / this.x));
   }
   
   //now using these methods (I think it goes here):
